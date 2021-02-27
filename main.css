@@ -1,4 +1,9 @@
+section {
+    margin: 10rem 0;
+}
+
 .main_title {
+    margin: 0;
     width: 100%;
     height: 100vh;
     background-image: url("mainimage.jpg");
@@ -40,48 +45,36 @@
     font-weight: 500;
 }
 
-.notice,
-.year_of_association,
-.association_slogan,
-.association_slogan2,
-.contact {
-    margin-top: 6rem;
-}
-
 .notice_title,
 .association_title,
 .more {
     text-align: center;
 }
 
-.notice_title,
-.association_title,
-.association_slogan_title,
-.association_slogan_title2 {
-    margin-bottom: 1.5rem;
-    font-size: 2.4rem;
-    font-weight: 500;
-}
-
 .more {
-    margin-top: 1rem;
-    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
 .more a {
     color: black;
     text-decoration: none;
-    border-bottom: solid 1px rgb(0, 0, 85);
+    padding: 0.5rem 0;
+    border-bottom: solid 1px rgb(0, 0, 65);
 }
 
-.association_title {
-    font-size: 1.8rem;
+.notice {
+    margin-top: 8rem;
+}
+
+.notice_title {
+    font-size: 2.5rem;
 }
 
 .notice_zone {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -90,12 +83,21 @@
 }
 
 .arrow {
-    width: 70%;
+    width: 40%;
     cursor: pointer;
+}
+
+.notice_image_container {
+    width: 120rem;
 }
 
 .notice_image {
     width: 100%;
+}
+
+.association_title {
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 #association_image {
@@ -103,110 +105,96 @@
 }
 
 .association_slogan {
-    text-align: right;
-    padding-right: 2rem;
-}
-
-.association_slogan_title {
-    font-size: 3rem;
-    font-weight: 600;
-    margin: 1.5rem 0;
-}
-
-.association_slogan_sub {
-    color: grey;
-    font-size: 2rem;
-    font-weight: 500;
-    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .association_slogan_container {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 2.5rem;
 }
 
-.association_slogan_back {
-    width: 10%;
-    text-align: left;
-    visibility: hidden;
+.association_slogan_container2 {
+    align-items: flex-end;
+}
+
+.association_slogan_container2 .association_slogan_spec {
+    text-align: right;
+}
+
+.association_slogan_title {
+    margin: 0;
+    font-size: 4rem;
+}
+
+.association_slogan_sub {
+    margin: 1rem 0;
+    color: grey;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .association_slogan_spec {
-    width: 100%;
-    text-align: right;
+    margin: 2rem 0;
     color:rgb(60, 60, 60);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 #slogan_image {
     width: 100%;
-}
-
-.association_slogan_container2 {
-    margin: 6rem 2rem;
-}
-
-.association_slogan_title2 {
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.association_slogan_spec2 {
-    color:rgb(60, 60, 60);
-    font-size: 1.5rem;
+    margin: 8rem 0;
 }
 
 .activity {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(215, 238, 255);
-}
-
-.activity1 {
-    padding-top: 6rem;
-}
-
-.activity_info {
-    padding: 3rem;
+    background-color: rgb(233, 245, 255);
 }
 
 .activity_image_container {
     width: 100%;
 }
-
-.activity2 div {
-    text-align: right;
+.activity_image_container img {
+    width: 100%;
 }
 
-.activity_image_container img {
-    width: 90%;
-    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.15);
+.activity_info {
+    margin: 8rem 4rem;
+    text-align: center;
 }
 
 .activity h1 {
-    color: white;
     font-size: 3rem;
-    text-align: center;
 }
 
 .activity h2 {
     font-size: 1.8rem;
     font-weight: 500;
     color:rgb(60, 60, 60);
-    text-align: center;
 }
+
+.activity_info_sub span{
+    font-size: 1.5rem;
+    padding: 0 0.3rem;
+    color:rgb(13, 55, 170);
+}
+
 
 .activity .more {
     margin: 0;
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
 }
+
 .contact h1 {
-    padding-left: 2rem;
+    padding-left: 2.5rem;
     font-size: 3rem;
+    margin: 3rem 0;
 }
 
 .contact h2 {
-    padding-left: 2rem;
+    padding-left: 2.5rem;
     font-size: 1.5rem;
     font-weight: 500;
     color:grey;
@@ -216,13 +204,16 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin: 5rem 0;
 }
 
-.contact_icon {
+.contact_icon a {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1.5rem 0;
+    color: black;
+    text-decoration: none;
 }
 
 .contact_icon svg {

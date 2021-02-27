@@ -13,10 +13,6 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-main {
-    padding-bottom: 5.5rem;
-}
-
 header {
     position: fixed;
     top:0;
@@ -43,7 +39,7 @@ header {
 
 #header_logo_title {
     font-size: 1.1rem;
-    font-weight: bolder;
+    font-weight: 700;
     padding: 0 0.8rem;
 }
 
@@ -55,6 +51,108 @@ header {
 #login_icon svg {
     width: 4rem;
     padding: 0 0.8rem;
+}
+
+.mobile_nav {
+    transform: translateY(-100%);
+    transition: transform 650ms ease-out;
+    position: fixed;
+    z-index: 98;
+    background: rgb(0, 110, 210);
+    filter: grayscale(50%);
+    width: 100%;
+    height: 100vh;
+}
+
+.mobile_nav_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 6rem 0;
+}
+
+.mobile_nav_item,
+.mobile_nav_item a {
+    font-size: 2.4rem;
+    color: white;
+    text-decoration: none;
+}
+
+.mobile_nav_item {
+    position: relative;
+    cursor: pointer;
+    padding: 5rem 0;
+}
+
+.mobile_nav_notice,
+.mobile_nav_contact {
+    padding: 1rem 0;
+    margin: 3rem 0;
+}
+
+.mobile_nav_item_sub {
+    position: absolute;
+    z-index: 99;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 22.5rem;
+    height: 15rem;
+    border: solid 1px white;
+    background-color: white;
+}
+
+.mobile_nav_item_sub a {
+    font-size: 1.8rem;
+    color: rgb(0, 0, 65);
+    text-decoration: none;
+}
+
+.mobile_sub1 {
+    left: -75px;
+    top: 90px;
+    display: none;
+}
+
+.mobile_sub2 {
+    left: -45px;
+    top: 90px;
+    display: none;
+}
+
+.mobile_nav_about:hover .mobile_sub1 {
+    display: flex;
+}
+
+.mobile_nav_about:active .mobile_sub1 {
+    display: flex;
+}
+
+.mobile_nav_community:hover .mobile_sub2 {
+    display: flex;
+}
+
+.mobile_nav_community:active .mobile_sub2 {
+    display: flex;
+}
+
+.mobile_nav_notice:hover,
+.mobile_nav_notice:active,
+.mobile_nav_contact:hover,
+.mobile_nav_contact:active {
+    border-bottom: solid 1px white;
+}
+
+.mobile_nav_item_sub a:hover,
+.mobile_nav_item_sub a:active {
+    color: rgb(0, 132, 255);
 }
 
 .burgerbar {
@@ -72,12 +170,32 @@ header {
 }
 
 .burgerbar span {
-    height: 0.125rem;
+    height: 0.13rem;
     width: 85%;
     background-color: black;
     display: block;
     margin-top: 0.4rem;
     margin-bottom: 0.6rem;
+}
+
+.main_slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.main_slogan svg {
+    width: 4rem;
+    fill: rgb(0, 0, 65);
+}
+
+.main_slogan h1 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin: 4rem 0;
 }
 
 .fixed_footer {
@@ -88,7 +206,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(0, 110, 212);
+    background-color: rgb(0, 110, 210);
     z-index: 100;
 }
 
@@ -103,89 +221,120 @@ footer {
 }
 
 .main_footer {
-    padding-bottom: 5.5rem;
-    padding-top: 5.5rem;
+    padding: 10rem 0;
     background-color:rgb(0, 71, 204);
     color: white;
 }
 
-.footer_policy {
-    display: flex;
-    width: 80%;
-    justify-content: space-evenly;
+.footer1 {
     padding-left: 2rem;
 }
 
-.footer_policy div {
-    width: 70%;
-    text-align: center;
-    color: rgb(200, 200, 200);
-}
-
 .footer_logo_container {
-    padding: 1.5rem 3rem;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .footer_logo {
     width: 45%;
     background-color: white;
     text-align: center;
+    margin-right: 1.5rem;
 }
 
 .footer_logo img {
-    width: 80%;
+    width: 90%;
     padding: 1.5rem 0;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 
-.footer_title {
-    padding-left: 2rem;
+.footer_logo_title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 1.5rem;
+    border-left: solid 1.5px rgb(128, 208, 255);
+    font-size: 1.8rem;
+    color: rgb(128, 208, 255);
 }
 
 .footer_title h1 {
     margin: 0;
-    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .footer_title h2 {
     margin: 0;
-    margin-top: 0.5rem;
-    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-size: 1.45rem;
     font-weight: 500;
     color: rgb(200, 200, 200);
+}
+
+.footer_title h3 {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: rgb(92, 195, 255);
 }
 
 .footer2 {
     text-align: right;
     padding-right: 2rem;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+    margin-top: 8rem;
 }
 
 .footer2 h1 {
-    margin: 1.5rem 0;
+    margin: 2rem 0;
     font-size: 2rem;
 }
 
 .footer_icons {
     display: flex;
     justify-content: space-between;
-    text-align: right;
-    padding-left: 65%;
+    padding-left: 70%;
 }
 
 .footer_icons svg {
     fill: white;
+    width: 70%;
 }
 
 .footer2 h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 300;
-    margin-bottom: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 8rem;
+}
+
+.footer_policy {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer_policy div {
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.footer_policy a {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
 }
 
 .footer2 h3 {
     font-size: 1rem;
     font-weight: 300;
     color: rgb(200, 200, 200);
+}
+
+.open {
+    display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
