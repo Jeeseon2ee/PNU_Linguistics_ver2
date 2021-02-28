@@ -1,0 +1,43 @@
+.main_title {
+    margin: 0;
+    background-image: url("linguistics_main.jpg");
+    background-position: 53% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.main_title h1,
+.main_title h2,
+.main_title h3,
+.main_title h4 {
+    margin: 0;
+    position: absolute;
+}
+
+.main_title h1 {
+    font-size: 7rem;
+    color: rgb(165, 165, 165, 0.1);
+    bottom: 67%;
+    left: 23.5%;
+}
+
+.main_title h2 {
+    font-size: 2.4rem;
+    color: rgb(119, 119, 119);
+    bottom: 62.5%;
+    left: 22%;
+}
+
+.main_title h3 {
+    font-size: 7rem;
+    color: rgb(165, 165, 165, 0.1);
+    bottom: 10%;
+    left: 5%;
+}

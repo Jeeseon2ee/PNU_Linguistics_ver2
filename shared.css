@@ -13,6 +13,8 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+/*header*/
+
 header {
     position: fixed;
     top:0;
@@ -24,6 +26,8 @@ header {
     padding: 1.25rem;
     z-index: 100;
 }
+
+/*header_main_logo*/
 
 .main_logo a {
     height: 3rem;
@@ -43,18 +47,24 @@ header {
     padding: 0 0.8rem;
 }
 
+/*header_main_menu*/
+
 .main_menu {
     display: flex;
     align-items: center;
 }
+
+/*header_login*/
 
 #login_icon svg {
     width: 4rem;
     padding: 0 0.8rem;
 }
 
+/*header_mobile_nav*/
+
 .mobile_nav {
-    transform: translateY(-100%);
+    transform: translateY(-150%);
     transition: transform 650ms ease-out;
     position: fixed;
     z-index: 98;
@@ -76,7 +86,7 @@ header {
 
 .mobile_nav_item,
 .mobile_nav_item a {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: white;
     text-decoration: none;
 }
@@ -155,6 +165,8 @@ header {
     color: rgb(0, 132, 255);
 }
 
+/*header_burgerbar*/
+
 .burgerbar {
     padding: 0;
     height: 3rem;
@@ -178,6 +190,8 @@ header {
     margin-bottom: 0.6rem;
 }
 
+/*"Main Slogan:Be the One Together*/
+
 .main_slogan {
     display: flex;
     flex-direction: column;
@@ -193,10 +207,18 @@ header {
 }
 
 .main_slogan h1 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     font-weight: 500;
     margin: 4rem 0;
 }
+
+/*footer*/
+
+footer {
+    filter: grayscale(50%);
+}
+
+/*fixed_footer*/
 
 .fixed_footer {
     position: fixed;
@@ -216,9 +238,7 @@ header {
     font-size: 1.25rem;
 }
 
-footer {
-    filter: grayscale(50%);
-}
+/*main_footer*/
 
 .main_footer {
     padding: 10rem 0;
@@ -332,6 +352,8 @@ footer {
     font-weight: 300;
     color: rgb(200, 200, 200);
 }
+
+/*js_open*/
 
 .open {
     display: block !important;

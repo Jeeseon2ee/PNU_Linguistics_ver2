@@ -2,6 +2,8 @@ section {
     margin: 10rem 0;
 }
 
+/*section1_main*/
+
 .main_title {
     margin: 0;
     width: 100%;
@@ -9,6 +11,7 @@ section {
     background-image: url("mainimage.jpg");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -44,6 +47,8 @@ section {
     color: rgb(60, 60, 60);
     font-weight: 500;
 }
+
+/*section2_notice*/
 
 .notice_title,
 .association_title,
@@ -95,6 +100,8 @@ section {
     width: 100%;
 }
 
+/*section3_Year of Association*/
+
 .association_title {
     font-size: 1.8rem;
     font-weight: 500;
@@ -103,6 +110,8 @@ section {
 #association_image {
     width: 100%;
 }
+
+/*secion4_Overall Association Slogan*/
 
 .association_slogan {
     display: flex;
@@ -127,13 +136,13 @@ section {
 
 .association_slogan_title {
     margin: 0;
-    font-size: 4rem;
+    font-size: 3.6rem;
 }
 
 .association_slogan_sub {
     margin: 1rem 0;
     color: grey;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
@@ -148,6 +157,8 @@ section {
     width: 100%;
     margin: 8rem 0;
 }
+
+/*section5_Overall Association Activity*/
 
 .activity {
     background-color: rgb(233, 245, 255);
@@ -166,7 +177,7 @@ section {
 }
 
 .activity h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
 }
 
 .activity h2 {
@@ -181,11 +192,12 @@ section {
     color:rgb(13, 55, 170);
 }
 
-
 .activity .more {
     margin: 0;
     padding-bottom: 8rem;
 }
+
+/*section6_contact*/
 
 .contact h1 {
     padding-left: 2.5rem;
