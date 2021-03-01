@@ -1,10 +1,15 @@
+section {
+    margin: 10rem 0;
+}
+
+/*section1_main*/
+
 .main_title {
     margin: 0;
     background-image: url("linguistics_main.jpg");
-    background-position: 60% 0;
+    background-position: left 52.5% bottom 0;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -13,31 +18,165 @@
     position: relative;
 }
 
-.main_title h1,
-.main_title h2,
-.main_title h3,
-.main_title h4 {
+.main_title div {
     margin: 0;
     position: absolute;
+    color: rgb(165, 165, 165, 0.1);
 }
 
 .main_title h1 {
-    font-size: 7rem;
-    color: rgb(165, 165, 165, 0.1);
+    color: rgb(165, 165, 165, 0.2);
+}
+
+.main_title_upper {
     bottom: 67%;
-    left: 22%;
+    left: 27%;
+    text-align: center;
+}
+
+.main_title_lower {
+    bottom: 10%;
+    left: 7%;
+}
+
+.main_title h1,
+.main_title h2,
+.main_title h3 {
+    margin: 0;
+    font-size: 6rem;
 }
 
 .main_title h2 {
-    font-size: 2.4rem;
-    color: rgb(119, 119, 119);
-    bottom: 62.5%;
-    left: 22%;
+    font-size: 2.2rem;
+    color: rgb(130, 130, 130);
 }
 
-.main_title h3 {
-    font-size: 7rem;
-    color: rgb(165, 165, 165, 0.1);
-    bottom: 10%;
-    left: 5%;
+/*sections(1,2,3,4)_shared*/
+
+.linguistics_intro,
+.linguistics_professors,
+.linguistics_goal,
+.linguistics_study {
+    margin: 10rem 2.5rem;
+}
+
+.linguistics_goal,
+.linguistics_study {
+    text-align: right;
+}
+
+.linguistics_info_title {
+    font-size: 3.2rem;
+    margin: 1rem 0;
+}
+
+.linguistics_info_subtitle {
+    font-size: 2rem;
+    color: rgb(130, 130, 130);
+    margin: 0;
+    margin-bottom: 4rem;
+    border-bottom: solid 1px rgb(130, 130, 130);
+    padding-bottom: 3.9rem;
+    width: 80%;
+}
+
+.linguistics_goal h2,
+.linguistics_study h2 {
+    margin-left: 20%;
+}
+
+.linguistics_intro h3,
+.linguistics_goal h3,
+.linguistics_study h3 {
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color:rgb(60, 60, 60);
+}
+
+/*section(2,4)_shared_images*/
+
+.linguistics_goal_image img,
+.linguistics_study_image img {
+    width: 100%;
+}
+
+.linguistics_goal_image,
+.linguistics_study_image {
+    margin: 5rem 0;
+}
+
+/*section3_professors*/
+
+.linguistics_professors {
+    margin: 10rem 0;
+}
+
+.linguistics_professors h1,
+.linguistics_professors h2 {
+    margin-left: 2.5rem;
+}
+
+.linguistics_professor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.linguistics_professor_image img {
+    width: 100%;
+}
+
+.linguistics_professor_info {
+    width: 100%;
+    padding: 5.5rem 2.5rem;
+    background-color: rgb(165, 165, 165, 0.1);
+}
+
+.professor2_info,
+.professor4_info {
+    text-align: right;
+}
+
+.linguistics_professor_info h1 {
+    margin: 0;
+    font-size: 2.6rem;
+}
+
+.linguistics_professor_info h2,
+.linguistics_professor_info h3 {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color:rgb(60, 60, 60);
+}
+
+.linguistics_professor_info h3 {
+    margin: 0;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/*section5_more_information*/
+
+.linguistics_more {
+    font-size: 1rem;
+    text-align: center;
+    padding: 3rem 0;
+    background-color: rgb(165, 165, 165, 0.1);
+}
+
+.linguistics_more h1 {
+    width: 60%;
+    margin-left: 20%;
+    font-weight: 300;
+}
+
+.linguistics_more h2 a {
+    font-weight: 300;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    border-bottom: solid 1px black;
 }

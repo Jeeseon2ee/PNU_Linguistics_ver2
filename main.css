@@ -160,7 +160,7 @@ section {
 /*section5_Overall Association Activity*/
 
 .activity {
-    background-color: rgb(233, 245, 255);
+    background-color: rgba(160, 235, 255, 0.15);
 }
 
 .activity_image_container {
