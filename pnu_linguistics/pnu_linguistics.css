@@ -7,7 +7,7 @@ section {
 .main_title {
     margin: 0;
     background-image: url("linguistics_main.jpg");
-    background-position: left 52.5% bottom 0;
+    background-position: left 51.5% bottom 0;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -30,12 +30,12 @@ section {
 
 .main_title_upper {
     bottom: 67%;
-    left: 27%;
+    left: 30%;
     text-align: center;
 }
 
 .main_title_lower {
-    bottom: 10%;
+    bottom: 7%;
     left: 7%;
 }
 
@@ -43,7 +43,7 @@ section {
 .main_title h2,
 .main_title h3 {
     margin: 0;
-    font-size: 6rem;
+    font-size: 5.5rem;
 }
 
 .main_title h2 {
