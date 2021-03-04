@@ -1,5 +1,25 @@
+/*sections_shared*/
 section {
     margin: 10rem 0;
+}
+
+.notice_title,
+.association_title,
+.more {
+    text-align: center;
+}
+
+.more {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.more a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    border-bottom: solid 1px rgb(0, 0, 65);
 }
 
 /*section1_main*/
@@ -49,25 +69,6 @@ section {
 
 /*section2_notice*/
 
-.notice_title,
-.association_title,
-.more {
-    text-align: center;
-}
-
-.more {
-    margin-top: 1.5rem;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-}
-
-.more a {
-    color: black;
-    text-decoration: none;
-    padding: 0.5rem 0;
-    border-bottom: solid 1px rgb(0, 0, 65);
-}
-
 .notice {
     margin-top: 8rem;
 }
@@ -76,27 +77,28 @@ section {
     font-size: 2.5rem;
 }
 
-.notice_zone {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.notice_zone div {
-    text-align: center;
-}
-
-.arrow {
-    width: 40%;
-    cursor: pointer;
+.notice_zone h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 2rem 0;
 }
 
 .notice_image_container {
-    width: 120rem;
+    width: 100%;
+    text-align: center;
 }
 
-.notice_image {
-    width: 100%;
+.notice_image img {
+    width: 80%;
+}
+
+.notice_image:hover,
+.notice_image:active {
+    animation: up 400ms forwards;
+}
+
+.notice_image_sub {
+    display: none;
 }
 
 /*section3_Year of Association*/
@@ -106,15 +108,19 @@ section {
     font-weight: 500;
 }
 
-#association_image {
+.association_image_container img {
     width: 100%;
+}
+
+.association_info {
+    display: none;
 }
 
 /*secion4_Overall Association Slogan*/
 
 .association_slogan {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
 }
 
 .association_slogan_container {
@@ -125,8 +131,13 @@ section {
     padding: 0 2.5rem;
 }
 
+.association_slogan_container1 {
+    padding-right: 15%;
+}
+
 .association_slogan_container2 {
     align-items: flex-end;
+    padding-left: 15%;
 }
 
 .association_slogan_container2 .association_slogan_spec {
@@ -152,7 +163,7 @@ section {
     font-weight: 500;
 }
 
-#slogan_image {
+.slogan_image {
     width: 100%;
     margin: 8rem 0;
 }
@@ -248,4 +259,264 @@ section {
 
 .fb svg {
     fill: rgb(10, 58, 189);
+}
+
+@media (min-width: 640px) {
+    section {
+        margin: 15rem 0;
+    }
+
+    .main_title-main {
+        font-size: 3.4rem;
+    }
+
+    .main_title-sub {
+        font-size: 1.8rem;
+    }
+
+    .notice {
+        margin-top: 10rem;
+    }
+
+    .notice_title {
+        margin: 7rem 0;
+    }
+
+    .notice_image_sub {
+        display: block;
+    }
+
+    .notice_image_container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .notice_image img {
+        width: 40rem;
+        height: 30rem;
+        padding: 0.2rem;
+    }
+    
+    .notice_info {
+        margin: 4rem 0;
+    }
+
+    .association_title {
+        display: none;
+    }
+
+    .association_image_info {
+        padding: 0 3%;
+    }
+
+    .association_image_container {
+        width: 60%;
+    }
+    
+    .association_info {
+        display: block;
+        text-align: right;
+        color: black;
+    }
+
+    .association_info h1 {
+        font-size: 2.2rem;
+        color:rgb(170, 170, 170);
+        margin: 0;
+        margin-top: 3rem;
+    }
+
+    .association_info h2 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin: 1rem 0;
+    }
+
+    .association_info_ppl {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .association_info_ppl div {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .association_info h3 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        border-bottom: solid 1px grey;
+        padding-bottom: 1.5rem;
+        width: 15rem;
+        margin: 1.5rem 0;
+        margin-left: 2rem;
+    }
+
+    .year_of_association .more {
+        margin-top: 3rem;
+    }
+
+    .association_slogan {
+        padding: 0 3%;
+    }
+
+    .association_slogan_container {
+        padding: 0;
+    }
+
+    .association_slogan_container1 {
+        padding-right: 20%;
+    }
+
+    .association_slogan_container2 {
+        padding-left: 20%;
+    }
+
+    .slogan_image_container {
+        width: 80%;
+        text-align: right;
+    }
+
+    .slogan_image {
+        margin: 6rem 0;
+    }
+
+    .activity_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10rem 0;
+    }
+
+    .activity_image_container {
+        width: 65%;
+    }
+
+    .activity_info {
+        width: 35%;
+        margin: 0 3rem;
+    }
+
+    .activity2 {
+        flex-direction: row-reverse;
+    }
+
+    .activity .more {
+        padding-bottom: 15rem;
+    }
+    
+    .contact h1 {
+        padding-left: 3%;
+    }
+
+    .contact h2 {
+        display: inline-block;
+        padding: 0;
+        padding-right: 1rem;
+    }
+
+    .contact_title_sub {
+        padding-left: 3%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .association_image_info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .association_info h1 {
+        margin: 0;
+    }
+
+    .association_info {
+        text-align: left;
+        max-width: 40rem;
+    }
+
+    .association_info_ppl div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .association_info h3 {
+        margin-right: 25rem
+    }
+
+    .association_info h1 {
+        font-size: 2.4rem;
+    }
+
+    .association_info h2 {
+        font-size: 2rem;
+    }
+
+    .association_slogan {
+        padding: 0 3%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .association_slogan_container {
+        width: 45%;
+    }
+
+    .slogan_image_container {
+        width: 55%;
+    }
+
+    .slogan_image {
+        margin: 0;
+        margin-top: 10rem;
+    }
+
+    .association_slogan_container1 {
+        width: 70%
+    }
+
+    .association_slogan_container2 {
+        padding-left: 5%;
+    }
+}
+
+@media (max-height: 450px) {
+    .main_title1 {
+        bottom: 52%;
+    }
+    
+    .main_title2 {
+        bottom: 32%;
+    }
+    
+    .main_title3 {
+        bottom: 12%;
+    }
+
+    .main_title-main {
+        font-size: 2.6rem;
+    }
+
+    .main_title-sub {
+        color: rgb(201, 201, 201);
+    }
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(0)
+    }
+    50% {
+        transform: translateY(-2rem)
+    }
+    100% {
+        transform: translateY(-1rem)
+    }
 }
