@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
 * {box-sizing: border-box;}
 
@@ -387,7 +388,7 @@ footer {
     #header_logo_title {
         font-weight: 900;
         padding: 0 1rem;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .main_menu a {
@@ -406,7 +407,7 @@ footer {
     }
 
     .main_link {
-        width: 40rem;
+        width: 35rem;
         display: flex;
         justify-content: space-evenly;
         align-items: center;

@@ -24,6 +24,11 @@ section {
     color: rgb(165, 165, 165, 0.1);
 }
 
+.main_title h1,
+.main_title h3 {
+    font-family: 'Bree Serif', serif;
+}
+
 .main_title h1 {
     color: rgb(165, 165, 165, 0.2);
 }
@@ -49,6 +54,10 @@ section {
 .main_title h2 {
     font-size: 2.2rem;
     color: rgb(130, 130, 130);
+}
+
+#main_title_pc {
+    display: none;
 }
 
 /*sections(1,2,3,4)_shared*/
@@ -117,13 +126,6 @@ section {
     margin-left: 2.5rem;
 }
 
-.linguistics_professor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
 .linguistics_professor_image img {
     width: 100%;
 }
@@ -179,4 +181,208 @@ section {
     text-decoration: none;
     padding-bottom: 0.5rem;
     border-bottom: solid 1px black;
+}
+
+@media (min-width: 640px) {
+    section {
+        margin: 15rem 0;
+    }
+
+    .main_title {
+        background-position: center;
+    }
+
+    .main_title_upper {
+        left: 38%;
+        bottom: 30%;
+        text-align: right;
+    }
+    
+    .main_title_lower {
+        left: 5%;
+        bottom: 10%;
+    }
+    
+    #main_title_mobile {
+        display: none;
+    }
+
+    #main_title_pc {
+        display: block;
+    }
+
+    .linguistics_intro,
+    .linguistics_professors,
+    .linguistics_goal,
+    .linguistics_study {
+        margin: 15rem 3%;
+    }
+
+    .linguistics_goal,
+    .linguistics_study {
+        text-align: left;
+    }
+
+    .linguistics_goal h2,
+    .linguistics_study h2 {
+        margin-left: 0;
+    }
+
+    .linguistics_info_subtitle {
+        width: 100%;
+    }
+    
+    .linguistics_intro {
+        width: 70%;
+    }
+
+    .linguistics_goal_image {
+        text-align: right;
+    }
+
+    .linguistics_goal_image img {
+        width: 90%;
+    }
+
+    .linguistics_goal_info {
+        width: 80%;
+    }
+    
+    .linguistics_professors h1,
+    .linguistics_professors h2 {
+        margin-left: 0;
+    }
+
+    .linguistics_professors h2 {
+        width: 76%;
+    }
+
+    .linguistics_professor_image {
+        width: 80%;
+    }
+    
+    .linguistics_professor_image img {
+        width: 95%;
+    }
+    
+    .linguistics_professor_info {
+        padding: 8rem 4%;
+        background: none;
+    }
+
+    .professor2_info,
+    .professor4_info {
+        text-align: left;
+    }
+
+    .linguistics_study_info {
+        text-align: right;
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    .linguistics_study_image {
+        text-align: left;
+    }
+
+    .linguistics_study_image img {
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .main_title_upper {
+        left: 43%;
+    }
+    
+    .main_title h1,
+    .main_title h3 {
+        font-size: 7rem;
+    }
+
+    .linguistics_goal_image,
+    .linguistics_study_image {
+        margin: 0;
+        text-align: center;
+    }
+
+    .linguistics_goal {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .linguistics_goal_image {
+        width: 60%;
+    }
+
+    .linguistics_goal_image img {
+        width: 90%;
+    }
+
+    .linguistics_goal_info {
+        width: 40%;
+    }
+
+    .linguistics_goal h3 {
+        margin-bottom: 5%;
+    }
+
+    .linguistics_professors > h2 {
+        width: 40%;
+    }
+    
+    .linguistics_professor {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 8rem 0;
+    }
+
+    .linguistics_professor_image {
+        width: 50%;
+    }
+
+    .linguistics_professor_image img {
+        width: 80%;
+    }
+
+    .linguistics_professor_info {
+        width: 50%;
+        border-left: solid 1px black;
+        padding: 0 4%;
+        margin: 3% 0;
+    }
+
+    .linguistics_professor_info h1 {
+        margin-bottom: 6rem;
+    }
+
+    .linguistics_professor_info h3 {
+        margin-top: 3rem;
+    }
+
+    .linguistics_study {
+        display: flex;
+        margin-top: 20rem;
+    }
+
+    .linguistics_study_image {
+        width: 60%;
+        text-align: right;
+    }
+
+    .linguistics_study_image img {
+        width: 95%;
+    }
+
+    .linguistics_study_info {
+        width: 40%;
+        margin-left: 0;
+        margin-top: 5%;
+    }
+
+    .linguistics_more {
+        background: none;
+    }
 }
